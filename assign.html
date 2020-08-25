@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BS-card</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+            
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Navbar</a>
+
+
+        <!-- Toggler/collapsible Button -->
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav float">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="about">About</a>
+                </li>
+                <li>
+                <form class="form-inline" action="#">
+                    <input 
+                    class="form-control mr-sm-2"
+                    type="text"
+                    placeholder="Search"
+                    />
+                    <button class="btn btn-danger" type="submit">Search</button>
+                </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+        <div id="content">
+            <h1>Home Page</h1>
+        </div>
+        </div>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#contact").click(function(){
+                $("#content").load("contact.html");
+                
+            })
+
+            $("#about").click(function(){
+                $("#content").load("about.html");
+            })
+        })
+    </script>
+    </body>
+</html>
